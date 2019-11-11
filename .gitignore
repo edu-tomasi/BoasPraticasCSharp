@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs
+/DesignPatternsParteUm/.vs/DesignPatternsParteUm/DesignTimeBuild
+/DesignPatternsParteUm/.vs/DesignPatternsParteUm/v15
+/DesignPatternsParteUm/MuitosImpostos-StrategyPattern/obj
+/DesignPatternsParteUm/PatternStrategy-MuitosImpostos/bin/Debug
+/DesignPatternsParteUm/PatternStrategy-MuitosImpostos/obj/Debug
