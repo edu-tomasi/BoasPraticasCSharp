@@ -30,7 +30,7 @@ public class Orcamento
 }
 ```
 
-Com isso, podemos criar novos orçamentos, instanciando objetos do respectivo tipo e caso queiramos calcular um imposto sobre seu valor, basta utilizarmos o atributo Valor para isso. Assim, podemos estipular que o ICMS valha 10% e precisamos calculá-lo, baseado no valor do orçamento. Para isso, podemos ter a seguinte classe com um simples método para realizar o cálculo:
+Com isso, podemos criar novos orçamentos, instanciando objetos do respectivo tipo e caso queiramos calcular um imposto sobre seu valor, basta utilizarmos o atributo Valor para isso. Assim, podemos estipular que o __ICMS valha 10%__ e precisamos calculá-lo, baseado no valor do orçamento. Para isso, podemos ter a seguinte classe com um simples método para realizar o cálculo:
 
 ```
 public class CalculadorDeImpostos 
@@ -43,7 +43,7 @@ public class CalculadorDeImpostos
 }
 ```
 
-Podemos ainda querer calcular outro imposto, como o ISS, que é 6% do valor do orçamento. Com isso, adicionamos a nova regra ao código anterior. Mas devemos escolher qual o imposto que será calculado. Portanto, o método RealizaCalculo deverá receber uma informação, indicando qual o imposto terá o cálculo realizado:
+Podemos ainda querer calcular outro imposto, como o __ISS, que é 6%__ do valor do orçamento. Com isso, adicionamos a nova regra ao código anterior. Mas devemos escolher qual o imposto que será calculado. Portanto, o método RealizaCalculo deverá receber uma informação, indicando qual o imposto terá o cálculo realizado:
 
 ```
 public class CalculadorDeImpostos 
@@ -64,10 +64,10 @@ public class CalculadorDeImpostos
 }
 ```
 
-Note que uma das consequências do código que acabamos de criar, é que espalhamos os cálculos e nossas regras de negócio. Dessa maneira, não temos nenhum encapsulamento de nossas regras de negócio e elas se tornam bastante suscetíveis a serem replicadas em outros pontos do código da aplicação. Por que não encapsulamos as regras dos cálculos em uma classe especializada para cada imposto?
+Note que uma das __consequências__ do código que acabamos de criar, __é que espalhamos os cálculos e nossas regras de negócio__. Dessa maneira, não temos nenhum encapsulamento de nossas regras de negócio e elas se tornam bastante suscetíveis a serem replicadas em outros pontos do código da aplicação. __Por que não encapsulamos as regras dos cálculos em uma classe especializada para cada imposto?__
 
-Encapsulando o comportamento
-Ao invés de mantermos as regras espalhadas pela nossa aplicação, podemos encapsulá-las em classes cujas responsabilidades sejam realizar os cálculos. Para isso, podemos criar as classes ICMS e ISS cada um com seu respectivo método para cálcular o valor do imposto de acordo com o orçamento.
+###Encapsulando o comportamento
+_Ao invés de mantermos as regras espalhadas pela nossa aplicação, podemos encapsulá-las em classes cujas responsabilidades sejam realizar os cálculos. Para isso, podemos criar as classes ICMS e ISS cada um com seu respectivo método para cálcular o valor do imposto de acordo com o orçamento._
 
 ```
 public class ICMS 
@@ -89,7 +89,7 @@ public class ISS
 }
 ```
 
-Agora temos as duas classes que separam a responsabilidade dos cálculos de impostos, com isso, podemos utilizá-las na classe CalculadorDeImpostos da seguinte maneira:
+Agora temos as duas classes que separam a __responsabilidade__ dos cálculos de impostos, com isso, podemos utilizá-las na classe CalculadorDeImpostos da seguinte maneira:
 
 ```
 public class CalculadorDeImpostos 
@@ -110,9 +110,9 @@ public class CalculadorDeImpostos
 }
 ```
 
-Agora o código está melhor, mas não significa que esteja bom. Um ponto extremamente crítico desse código é o fato de que quando quisermos adicionar mais um tipo diferente de cálculo de imposto em nosso calculador, teremos que alterar essa classe adicionando mais um bloco de if, além de criarmos a classe que encapsulará o cálculo do novo imposto. Parece bastante trabalho.
+Agora o código está __melhor__, mas não significa que __esteja bom__. Um ponto extremamente __crítico__ desse código é o fato de que quando __quisermos adicionar mais um tipo diferente de cálculo de imposto em nosso calculador, teremos que alterar essa classe adicionando mais um bloco de if__, além de criarmos a classe que encapsulará o cálculo do novo imposto. Parece bastante trabalho.
 
-Eliminando os condicionais com polimorfismo e o pattern Strategy
+###Eliminando os condicionais com polimorfismo e o pattern Strategy
 O que queremos em nosso código é não realizar nenhum condicional, ou seja, não termos mais que fazer ifs dentro do CalculadorDeImpostos. Dessa forma, não devemos mais receber a String com o nome do imposto, no qual realizamos os ifs. Mas como escolheremos qual o imposto que deve ser calculado?
 
 Uma primeira possibilidade é criar dois métodos separadas na classe CalculadorDeImposto. Um para o ICMS e outro para o ISS, dessa forma teremos:
@@ -210,8 +210,8 @@ public class TesteDeImpostos
 }
 ```
 
-Agora, com um único método em nosso CalculadorDeImposto, podemos realizar o cálculo de diferentes tipos de impostos, apenas recebendo a estratégia do tipo do imposto que desejamos utilizar no cálculo.
+__Agora, com um único método em nosso CalculadorDeImposto, podemos realizar o cálculo de diferentes tipos de impostos, apenas recebendo a estratégia do tipo do imposto que desejamos utilizar no cálculo.__
 
-Quando utilizamos uma hierarquia, como fizemos com a interface Imposto e as implementações ICMS e ISS, e recebemos o tipo mais genérico como parâmetro, para ganharmos o polimorfismo na regra que será executada, simplificando o código e sua evolução, estamos usando o Design Pattern chamado Strategy.
+__Quando utilizamos uma hierarquia, como fizemos com a interface Imposto e as implementações ICMS e ISS, e recebemos o tipo mais genérico como parâmetro, para ganharmos o polimorfismo na regra que será executada, simplificando o código e sua evolução, estamos usando o Design Pattern chamado Strategy.__
 
-Repare que a criação de uma nova estratégia de cálculo de imposto não implica em mudanças no código escrito acima! Basta criarmos uma nova classe que implementa a interface Imposto, que nosso CalculadorDeImposto conseguirá calculá-lo sem precisar de nenhuma alteração!
+__Repare que a criação de uma nova estratégia de cálculo de imposto não implica em mudanças no código escrito acima! Basta criarmos uma nova classe que implementa a interface Imposto, que nosso CalculadorDeImposto conseguirá calculá-lo sem precisar de nenhuma alteração!__
