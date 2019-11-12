@@ -40,7 +40,26 @@ namespace PatternStrategy_MuitosImpostos
             #endregion
 
             #region Exemplo Investimento
+            ContaBancaria conta = new ContaBancaria(1000);
+            RealizadorDeInvestimentos investidor = new RealizadorDeInvestimentos();
 
+            InvestimentoConservador conservador = new InvestimentoConservador();
+            InvestimentoModerado moderado = new InvestimentoModerado();
+            InvestimentoArrojado arrojado = new InvestimentoArrojado();
+
+            Console.WriteLine($"Saldo inicial: {conta.Saldo}");
+
+            //investidor.Investir(conta, conservador);
+            investidor.Realiza(conta, conservador);
+            Console.WriteLine($"Saldo após investimento conservador: {conta.Saldo}");
+
+            //investidor.Investir(conta, moderado);
+            investidor.Realiza(conta, moderado);
+            Console.WriteLine($"Saldo após investimento moderado: {conta.Saldo}");
+
+            //investidor.Investir(conta, arrojado);
+            investidor.Realiza(conta, arrojado);
+            Console.WriteLine($"Saldo após investimento arrojado: {conta.Saldo}");
             #endregion
         }
     }

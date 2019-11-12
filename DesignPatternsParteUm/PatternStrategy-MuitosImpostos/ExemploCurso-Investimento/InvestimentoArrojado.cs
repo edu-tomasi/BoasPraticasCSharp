@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace PatternStrategy_MuitosImpostos
 {
-    public class InvestimentoModerado : IInvestimento
+    public class InvestimentoArrojado : IInvestimento
     {
         private Random random;
-
-        public InvestimentoModerado()
+        public InvestimentoArrojado()
         {
             random = new Random();
         }
@@ -22,10 +21,10 @@ namespace PatternStrategy_MuitosImpostos
         /// <returns></returns>
         public double Calcula(ContaBancaria conta)
         {
-            if (random.Next(2) == 0)
-                return (double)conta.Saldo * 0.025;
-            else
-                return (double)conta.Saldo * 0.007;
+            int chute = random.Next(10);
+            if (chute >= 0 && chute <= 1) return (double)conta.Saldo * 0.5;
+            else if (chute >= 2 && chute <= 4) return (double)conta.Saldo * 0.3;
+            else return (double)conta.Saldo * 0.006;
         }
 
         /// <summary>
@@ -35,10 +34,11 @@ namespace PatternStrategy_MuitosImpostos
         /// <returns></returns>
         public decimal InvestirSaldo(decimal saldo)
         {
-            bool escolhido = new Random().Next(101) > 50;
+            int chances = new Random().Next(101);
 
-            if (escolhido) return saldo * 0.025m;
-            else return saldo * 0.07m;
+            if (chances < 20) return saldo * 0.05m;
+            else if (chances < 30) return saldo * 0.03m;
+            else return saldo * 0.006m;
         }
     }
 }

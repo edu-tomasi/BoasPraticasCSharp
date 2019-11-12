@@ -51,6 +51,7 @@
     <Compile Include="ExemploCurso-Imposto\Orcamento.cs" />
     <Compile Include="ExemploCurso-Investimento\ContaBancaria.cs" />
     <Compile Include="ExemploCurso-Investimento\IInvestimento.cs" />
+    <Compile Include="ExemploCurso-Investimento\InvestimentoArrojado.cs" />
     <Compile Include="ExemploCurso-Investimento\InvestimentoConservador.cs" />
     <Compile Include="ExemploCurso-Investimento\InvestimentoModerado.cs" />
     <Compile Include="ExemploCurso-Investimento\RealizadorDeInvestimentos.cs" />
