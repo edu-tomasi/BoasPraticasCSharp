@@ -44,10 +44,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExemploCurso-Imposto\CalculadorDeImpostos.cs" />
+    <Compile Include="ExemploCurso-Imposto\ICCC.cs" />
     <Compile Include="ExemploCurso-Imposto\ICMS.cs" />
     <Compile Include="ExemploCurso-Imposto\IImposto.cs" />
     <Compile Include="ExemploCurso-Imposto\ISS.cs" />
     <Compile Include="ExemploCurso-Imposto\Orcamento.cs" />
+    <Compile Include="ExemploCurso-Investimento\ContaBancaria.cs" />
+    <Compile Include="ExemploCurso-Investimento\IInvestimento.cs" />
+    <Compile Include="ExemploCurso-Investimento\InvestimentoConservador.cs" />
+    <Compile Include="ExemploCurso-Investimento\InvestimentoModerado.cs" />
+    <Compile Include="ExemploCurso-Investimento\RealizadorDeInvestimentos.cs" />
     <Compile Include="ExemploEduardo-ValorAluguel\AluguelFixo.cs" />
     <Compile Include="ExemploEduardo-ValorAluguel\AluguelPercentual.cs" />
     <Compile Include="ExemploEduardo-ValorAluguel\CalculadorDeValorAluguel.cs" />
