@@ -8,7 +8,12 @@ namespace PatternChainOfResponsibility_DescontosOrçamento.ExemploCurso_Formato
 {
     public class RequisicaoCsv : IRequisicao
     {
-        public IRequisicao Proxima { get; set; }
+        public IRequisicao Proxima { get; }
+
+        public RequisicaoCsv(IRequisicao proxima)
+        {
+            Proxima = proxima;
+        }
 
         public string Responder(Conta conta, Formato formato)
         {

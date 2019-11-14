@@ -8,7 +8,7 @@ namespace PatternChainOfResponsibility_DescontosOrçamento.ExemploCurso_Formato
 {
     public interface IRequisicao
     {
-        IRequisicao Proxima { get; set; }
+        IRequisicao Proxima { get; }
         string Responder(Conta conta, Formato formato);
     }
 }

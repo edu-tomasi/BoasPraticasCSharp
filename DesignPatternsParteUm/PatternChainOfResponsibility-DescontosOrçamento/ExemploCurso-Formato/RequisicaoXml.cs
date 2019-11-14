@@ -8,14 +8,27 @@ namespace PatternChainOfResponsibility_DescontosOrçamento.ExemploCurso_Formato
 {
     public class RequisicaoXml : IRequisicao
     {
-        public IRequisicao Proxima { get; set; }
+        public IRequisicao Proxima { get; }
+
+        public RequisicaoXml(IRequisicao proxima)
+        {
+            Proxima = proxima;
+        }
 
         public string Responder(Conta conta, Formato formato)
         {
             if (formato == Formato.XML)
-                return $"<nome>{conta.Nome}</nome><saldo>{conta.Saldo}</saldo>";
-
-            return Proxima.Responder(conta, formato);
+                return $"<conta><nome>{conta.Nome}</nome><saldo>{conta.Saldo}</saldo></conta>";
+            else
+            {
+                if (Proxima != null)
+                {
+                    return Proxima.Responder(conta, formato);
+                } else
+                {
+                    return "";
+                }
+            }
         }
     }
 }
