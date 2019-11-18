@@ -8,6 +8,11 @@ namespace PatternTemplateMethod_OrçamentoImpostos
 {
     public class RelatorioComplexo : TemplateRelatorio
     {
+        public RelatorioComplexo(TemplateRelatorio proximo = null)
+        {
+            TipoRelatorio = TipoRelatorio.RelatorioComplexo;
+            Proximo = proximo;
+        }
         public override void CabecalhoRelatorio()
         {
             Console.WriteLine($" Banco Exemplo {Environment.NewLine} End.: Rua Exemplo, Nº 123, Cruz Baixa, Cidade/UF {Environment.NewLine} Tel.: +55 47 3211-4500");

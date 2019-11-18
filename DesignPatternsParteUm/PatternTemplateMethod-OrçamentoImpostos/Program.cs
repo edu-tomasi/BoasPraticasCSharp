@@ -10,17 +10,29 @@ namespace PatternTemplateMethod_OrçamentoImpostos
     {
         static void Main(string[] args)
         {
-            RelatorioSimples relatorioSimples = new RelatorioSimples();
-            relatorioSimples.ImprimirRelatorio();
+            #region Template Method
+            //RelatorioSimples relatorioSimples = new RelatorioSimples();
+            //relatorioSimples.ImprimirRelatorio();
+            //Console.ReadKey();
+
+            //Console.Clear();
+
+            //RelatorioComplexo relatorioComplexo = new RelatorioComplexo();
+            //relatorioComplexo.ImprimirRelatorio();
+            //Console.ReadKey();
+
+            //Console.Clear(); 
+            #endregion
+
+
+            #region Template Method + Chain of Responsability
+            TipoRelatorio tipo = TipoRelatorio.RelatorioComplexo;
+
+            RelatorioSimples relatorio = new RelatorioSimples(new RelatorioComplexo());
+            relatorio.ImprimirRelatorio(tipo);
+            #endregion
+            
             Console.ReadKey();
-
-            Console.Clear();
-
-            RelatorioComplexo relatorioComplexo = new RelatorioComplexo();
-            relatorioComplexo.ImprimirRelatorio();
-            Console.ReadKey();
-
-            Console.Clear();
         }
     }
 }
