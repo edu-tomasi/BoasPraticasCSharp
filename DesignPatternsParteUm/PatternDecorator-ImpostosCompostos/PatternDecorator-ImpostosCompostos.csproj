@@ -43,13 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ICCC.cs" />
-    <Compile Include="ICMS.cs" />
-    <Compile Include="Imposto.cs" />
-    <Compile Include="ISS.cs" />
-    <Compile Include="Orcamento.cs" />
+    <Compile Include="Exemplos-Imposto\ICCC.cs" />
+    <Compile Include="Exemplos-Imposto\ICMS.cs" />
+    <Compile Include="Exemplos-Imposto\ICPP.cs" />
+    <Compile Include="Exemplos-Imposto\IKCV.cs" />
+    <Compile Include="Exemplos-Imposto\Imposto.cs" />
+    <Compile Include="Exemplos-Imposto\ImpostoMuitoAlto.cs" />
+    <Compile Include="Exemplos-Imposto\ISS.cs" />
+    <Compile Include="Exemplos-Imposto\Orcamento.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Exemplos-Imposto\TemplateImpostoCondicional.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
