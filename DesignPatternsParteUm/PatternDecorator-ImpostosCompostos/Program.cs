@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PatternDecorator_ImpostosCompostos
 {
@@ -38,6 +35,22 @@ namespace PatternDecorator_ImpostosCompostos
             //double valorImposto = imposto.Calcula(orcamento);
             //Console.WriteLine(valorImposto); 
             #endregion
+
+            List<Conta> listaDeContas = new List<Conta>();
+            listaDeContas.Add(new Conta(90, DateTime.Now.AddDays(-5)));
+            listaDeContas.Add(new Conta(501000, DateTime.Now));
+            listaDeContas.Add(new Conta(10000, DateTime.Now.AddDays(-7)));
+            listaDeContas.Add(new Conta(25000, DateTime.Now.AddMonths(-1)));
+
+            Filtro filtro = new FiltroContaSaldoMenor100Reais(new FiltroContaSaldoMaior500MilReais(new FiltroContaDataAberturaMesCorrente()));
+
+
+            var resultadoFiltrado = filtro.Filtrar(listaDeContas);
+
+            foreach (Conta item in resultadoFiltrado)
+            {
+                Console.WriteLine(item);
+            }
 
             Console.ReadKey();
         }
