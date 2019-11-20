@@ -56,3 +56,30 @@ Segue trechos dos códigos gerados:
         protected override void StartPlay() => Console.WriteLine("Football Game Started. Enjoy the game!");
     }
 ```
+
+### Program.cs
+```
+        static void Main(string[] args)
+        {
+            Game game = new Cricket();
+            game.Play();
+            Console.WriteLine();
+            /*
+                Output:
+                    Cricket Game Initialized! Start playing.
+                    Cricket Game Started. Enjoy the game!
+                    Cricket Game Finished!
+             */
+
+            game = new Football();
+            game.Play();
+            /*
+                Output:
+                    Football Game Initialized! Start playing.
+                    Football Game Started. Enjoy the game!
+                    Football Game Finished!
+             */
+
+            Console.ReadKey();
+        }
+```

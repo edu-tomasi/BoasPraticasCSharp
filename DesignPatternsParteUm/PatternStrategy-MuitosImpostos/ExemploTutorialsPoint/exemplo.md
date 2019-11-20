@@ -10,7 +10,7 @@ Passo à passo:
  * Criar a classe de contexto, que será reponsável por armazenar a __Strategy__ escolhida e pela chamada da operação da mesma.
  * Instancie a classe `Context` passando como parâmetro a __Strategy__ desejada, após isso basta fazer a chamada do método `executeStrategy()`.
 
-Segue trechos dos código gerados:
+Segue trechos dos códigos gerados:
 
 ### IStrategy.cs
 ```

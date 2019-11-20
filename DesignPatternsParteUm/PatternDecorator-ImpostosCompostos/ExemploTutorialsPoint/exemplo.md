@@ -1,4 +1,4 @@
-﻿### Design Patterns - Decoration Pattenr
+﻿### Design Patterns - Decoration Pattern
 
 Mais informações sobre este exemplo podem ser encontradas no seguinte [endereço](https://www.tutorialspoint.com/design_pattern/decorator_pattern.htm).
 
