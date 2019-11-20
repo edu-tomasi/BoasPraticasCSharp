@@ -59,11 +59,17 @@
     <Compile Include="ExemploEduardo-ValorAluguel\AluguelPercentual.cs" />
     <Compile Include="ExemploEduardo-ValorAluguel\CalculadorDeValorAluguel.cs" />
     <Compile Include="ExemploEduardo-ValorAluguel\IAluguel.cs" />
+    <Compile Include="ExemploTutorialsPoint\Context.cs" />
+    <Compile Include="ExemploTutorialsPoint\IStrategy.cs" />
+    <Compile Include="ExemploTutorialsPoint\OperacaoMultiplicacao.cs" />
+    <Compile Include="ExemploTutorialsPoint\OperacaoSoma.cs" />
+    <Compile Include="ExemploTutorialsPoint\OperacaoSubtracao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ExemploTutorialsPoint\exemplo.md" />
     <None Include="readme.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

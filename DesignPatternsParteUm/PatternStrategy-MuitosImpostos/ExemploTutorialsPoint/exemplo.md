@@ -53,13 +53,13 @@ Segue trechos dos código gerados:
         static void Main(string[] args)
         {
             Context contexto = new Context(new OperacaoSoma());
-            Console.WriteLine("10 + 5 = " + contexto.executeStrategy(10,5));
+            Console.WriteLine("10 + 5 = " + contexto.executeStrategy(10,5));	///Output: 10 + 5 = 15
 
             contexto = new Context(new OperacaoSubtracao());
-            Console.WriteLine("10 - 5 = " + contexto.executeStrategy(10,5));
+            Console.WriteLine("10 - 5 = " + contexto.executeStrategy(10,5));	///Output: 10 - 5 = 5
 
             contexto = new Context(new OperacaoMultiplicacao());
-            Console.WriteLine("10 * 5 = " + contexto.executeStrategy(10, 5));
+            Console.WriteLine("10 * 5 = " + contexto.executeStrategy(10, 5));	///Output: 10 * 5 = 50
 
             Console.ReadKey();
         }
