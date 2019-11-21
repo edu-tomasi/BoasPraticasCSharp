@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PatternState_VariacaoEstadoOrcamento
 {
@@ -10,22 +6,35 @@ namespace PatternState_VariacaoEstadoOrcamento
     {
         static void Main(string[] args)
         {
-            Orcamento reforma = new Orcamento(500);
+            #region Exemplo Orçamento
+            //Orcamento reforma = new Orcamento(500);
 
-            Console.WriteLine(reforma.Valor);
-
-            reforma.AplicaDescontoExtra();
-            Console.WriteLine(reforma.Valor);
-            reforma.Aprova();
-
-            reforma.AplicaDescontoExtra();
-            Console.WriteLine(reforma.Valor);
-
-            reforma.Finaliza();
+            //Console.WriteLine(reforma.Valor);
 
             //reforma.AplicaDescontoExtra();
-            reforma.Aprova();
-            
+            //Console.WriteLine(reforma.Valor);
+            //reforma.Aprova();
+
+            //reforma.AplicaDescontoExtra();
+            //Console.WriteLine(reforma.Valor);
+
+            //reforma.Finaliza();
+
+            ////reforma.AplicaDescontoExtra();
+            ////reforma.Aprova();     
+            #endregion
+
+            #region Exemplo Conta
+            Conta conta = new Conta();
+            conta.Depositar(100);
+
+            conta.Sacar(50);
+
+            conta.Depositar(100);
+            conta.Sacar(250);
+
+            conta.Sacar(10);
+            #endregion
         }
     }
 }
