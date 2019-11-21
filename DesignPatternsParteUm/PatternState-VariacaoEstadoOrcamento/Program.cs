@@ -28,6 +28,8 @@ namespace PatternState_VariacaoEstadoOrcamento
             Conta conta = new Conta();
             conta.Depositar(100);
 
+            //conta.Saldo = 1000000;    //Após adicionar o estado na classe conta, podemos alterar o nivel de acesso do campo "Saldo" para private.
+
             conta.Sacar(50);
 
             conta.Depositar(100);

@@ -15,11 +15,13 @@ namespace PatternState_VariacaoEstadoOrcamento
 
         public void Depositar(Conta conta, double valor)
         {
-            conta.Saldo += valor * 0.95;
-            if (conta.Saldo > 0)
-            {
-                AlterarEstado(conta, new EstadoPositivo());
-            }
+            /*
+             * conta.Saldo += valor * 0.95;
+             * if (conta.Saldo > 0)
+             * {
+             *    AlterarEstado(conta, new EstadoPositivo());
+             * }
+            */
         }
 
         public void Sacar(Conta conta, double valor)
