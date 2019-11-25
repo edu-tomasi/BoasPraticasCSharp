@@ -25,17 +25,32 @@ namespace PatternState_VariacaoEstadoOrcamento
             #endregion
 
             #region Exemplo Conta
-            Conta conta = new Conta();
-            conta.Depositar(100);
+            //Conta conta = new Conta();
+            //conta.Depositar(100);
 
-            //conta.Saldo = 1000000;    //Após adicionar o estado na classe conta, podemos alterar o nivel de acesso do campo "Saldo" para private.
+            ////conta.Saldo = 1000000;    //Após adicionar o estado na classe conta, podemos alterar o nivel de acesso do campo "Saldo" para private.
 
-            conta.Sacar(50);
+            //conta.Sacar(50);
 
-            conta.Depositar(100);
-            conta.Sacar(250);
+            //conta.Depositar(100);
+            //conta.Sacar(250);
 
-            conta.Sacar(10);
+            //conta.Sacar(10);
+            #endregion
+
+            #region Exemplo Tutorials Point
+            Context context = new Context();
+
+            StartState startState = new StartState();
+            startState.doAction(context);
+
+            Console.WriteLine(context.state.ToString());
+
+            StopState stopState = new StopState();
+            stopState.doAction(context);
+
+            Console.WriteLine(context.state.ToString());
+
             #endregion
         }
     }
