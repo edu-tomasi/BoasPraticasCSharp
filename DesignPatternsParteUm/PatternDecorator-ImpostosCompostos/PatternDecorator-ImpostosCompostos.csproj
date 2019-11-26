@@ -56,12 +56,18 @@
     <Compile Include="Exemplo-Conta\FiltroContaDataAberturaMesCorrente.cs" />
     <Compile Include="Exemplo-Conta\FiltroContaSaldoMaior500MilReais.cs" />
     <Compile Include="Exemplo-Conta\FiltroContaSaldoMenor100Reais.cs" />
+    <Compile Include="ExemploTutorialsPoint\Circle.cs" />
+    <Compile Include="ExemploTutorialsPoint\IShape.cs" />
+    <Compile Include="ExemploTutorialsPoint\Rectangle.cs" />
+    <Compile Include="ExemploTutorialsPoint\RedShapeDecorator.cs" />
+    <Compile Include="ExemploTutorialsPoint\ShapeDecorator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Exemplos-Imposto\TemplateImpostoCondicional.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ExemploTutorialsPoint\exemplo.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

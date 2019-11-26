@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PatternStrategy_MuitosImpostos.ExemploTutorialsPoint;
+using System;
 
 namespace PatternStrategy_MuitosImpostos
 {
@@ -40,27 +41,40 @@ namespace PatternStrategy_MuitosImpostos
             #endregion
 
             #region Exemplo Investimento
-            ContaBancaria conta = new ContaBancaria(1000);
-            RealizadorDeInvestimentos investidor = new RealizadorDeInvestimentos();
+            //ContaBancaria conta = new ContaBancaria(1000);
+            //RealizadorDeInvestimentos investidor = new RealizadorDeInvestimentos();
 
-            InvestimentoConservador conservador = new InvestimentoConservador();
-            InvestimentoModerado moderado = new InvestimentoModerado();
-            InvestimentoArrojado arrojado = new InvestimentoArrojado();
+            //InvestimentoConservador conservador = new InvestimentoConservador();
+            //InvestimentoModerado moderado = new InvestimentoModerado();
+            //InvestimentoArrojado arrojado = new InvestimentoArrojado();
 
-            Console.WriteLine($"Saldo inicial: {conta.Saldo}");
+            //Console.WriteLine($"Saldo inicial: {conta.Saldo}");
 
-            //investidor.Investir(conta, conservador);
-            investidor.Realiza(conta, conservador);
-            Console.WriteLine($"Saldo após investimento conservador: {conta.Saldo}");
+            ////investidor.Investir(conta, conservador);
+            //investidor.Realiza(conta, conservador);
+            //Console.WriteLine($"Saldo após investimento conservador: {conta.Saldo}");
 
-            //investidor.Investir(conta, moderado);
-            investidor.Realiza(conta, moderado);
-            Console.WriteLine($"Saldo após investimento moderado: {conta.Saldo}");
+            ////investidor.Investir(conta, moderado);
+            //investidor.Realiza(conta, moderado);
+            //Console.WriteLine($"Saldo após investimento moderado: {conta.Saldo}");
 
-            //investidor.Investir(conta, arrojado);
-            investidor.Realiza(conta, arrojado);
-            Console.WriteLine($"Saldo após investimento arrojado: {conta.Saldo}");
+            ////investidor.Investir(conta, arrojado);
+            //investidor.Realiza(conta, arrojado);
+            //Console.WriteLine($"Saldo após investimento arrojado: {conta.Saldo}");
             #endregion
+
+            #region ExemploTutorialsPoint
+            Context contexto = new Context(new OperacaoSoma());
+            Console.WriteLine("10 + 5 = " + contexto.executeStrategy(10,5)); ///Output: 10 + 5 = 15
+
+            contexto = new Context(new OperacaoSubtracao());
+            Console.WriteLine("10 - 5 = " + contexto.executeStrategy(10,5)); //Output: 10 - 5 = 5
+
+            contexto = new Context(new OperacaoMultiplicacao());
+            Console.WriteLine("10 * 5 = " + contexto.executeStrategy(10, 5)); //Output: 10 * 5 = 50
+            #endregion
+
+            Console.ReadKey();
         }
     }
 }
