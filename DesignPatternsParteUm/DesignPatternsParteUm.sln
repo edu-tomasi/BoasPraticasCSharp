@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternBuilder-GeradorDeNot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternState-VariacaoEstadoOrcamento", "PatternState-VariacaoEstadoOrcamento\PatternState-VariacaoEstadoOrcamento.csproj", "{D4CD296A-EFB2-4CA3-9E1C-11444351F8FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternObserver-ExecutandoAcoesDiferentes", "PatternObserver-ExecutandoAcoesDiferentes\PatternObserver-ExecutandoAcoesDiferentes.csproj", "{5E1CAAA2-1100-4E04-A9F2-B570BF026F77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{D4CD296A-EFB2-4CA3-9E1C-11444351F8FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4CD296A-EFB2-4CA3-9E1C-11444351F8FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4CD296A-EFB2-4CA3-9E1C-11444351F8FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E1CAAA2-1100-4E04-A9F2-B570BF026F77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E1CAAA2-1100-4E04-A9F2-B570BF026F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E1CAAA2-1100-4E04-A9F2-B570BF026F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E1CAAA2-1100-4E04-A9F2-B570BF026F77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

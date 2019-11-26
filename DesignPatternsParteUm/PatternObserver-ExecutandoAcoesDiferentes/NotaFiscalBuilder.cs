@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PatternObserver_ExecutandoAcoesDiferentes;
+using System;
 using System.Collections.Generic;
 
 namespace PatternBuilder_GeradorDeNotaFiscal
@@ -13,7 +14,26 @@ namespace PatternBuilder_GeradorDeNotaFiscal
         public DateTime Data { get; private set; }
         public IList<ItemDaNota> TodosItens = new List<ItemDaNota>();
 
-        public NotaFiscal Constroi() => new NotaFiscal(RazaoSocial, Cnpj, Data, ValorTotal, Impostos, TodosItens, Observacoes);
+        private IList<IAcaoAposGererNota> todasAcoesASeremExecutatdas = new List<IAcaoAposGererNota>();
+
+        public NotaFiscal Constroi()
+        {
+            NotaFiscal nf = new NotaFiscal(RazaoSocial, Cnpj, Data, ValorTotal, Impostos, TodosItens, Observacoes);
+
+            foreach (IAcaoAposGererNota acao in todasAcoesASeremExecutatdas)
+            {
+                acao.Executa(nf);
+            }
+
+            return nf;
+        }
+
+        public void AdicionarAcao(IAcaoAposGererNota novaAcao)
+        {
+            this.todasAcoesASeremExecutatdas.Add(novaAcao);
+        }
+
+
         public NotaFiscalBuilder ParaEmpresa(string razaoSocial)
         {
             this.RazaoSocial = razaoSocial;
