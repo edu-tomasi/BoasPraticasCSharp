@@ -7,7 +7,7 @@
     <ProjectGuid>{D4CD296A-EFB2-4CA3-9E1C-11444351F8FF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>PatternState_VariacaoEstadoOrcamento</RootNamespace>
-    <AssemblyName>PatternState_VariacaoEstadoOrcamento</AssemblyName>
+    <AssemblyName>PatternState-VariacaoEstadoOrcamento</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExemploConta\Conta.cs" />
+    <Compile Include="ExemploConta\EstadoNegativo.cs" />
+    <Compile Include="ExemploConta\EstadoPositivo.cs" />
+    <Compile Include="ExemploConta\IEstadoDeUmaConta.cs" />
+    <Compile Include="ExemploOrcamento\EstadosOrcamento.cs" />
+    <Compile Include="ExemploOrcamento\IEstadoDeUmOrcamento.cs" />
+    <Compile Include="ExemploOrcamento\Orcamento.cs" />
+    <Compile Include="ExemploTutorialsPoint\Context.cs" />
+    <Compile Include="ExemploTutorialsPoint\IState.cs" />
+    <Compile Include="ExemploTutorialsPoint\StartState.cs" />
+    <Compile Include="ExemploTutorialsPoint\StopState.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ExemploTutorialsPoint\exemplo.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
