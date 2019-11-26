@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29519.87
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternStrategy-MuitosImpostos", "PatternStrategy-MuitosImpostos\PatternStrategy-MuitosImpostos.csproj", "{649B2FF3-54F3-4C0C-AC22-4AA9BB30290A}"
 EndProject
@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternTemplateMethod-Orça
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternDecorator-ImpostosCompostos", "PatternDecorator-ImpostosCompostos\PatternDecorator-ImpostosCompostos.csproj", "{F6547846-5F0D-4200-9259-D148ED865818}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternBuilder-GeradorDeNotaFiscal", "PatternBuilder-GeradorDeNotaFiscal\PatternBuilder-GeradorDeNotaFiscal.csproj", "{CF758EF5-5B79-495E-AA53-B7A0AC55BF8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternBuilder-GeradorDeNotaFiscal", "PatternBuilder-GeradorDeNotaFiscal\PatternBuilder-GeradorDeNotaFiscal.csproj", "{74CBE79B-9C43-4970-B3B5-B106ED1CBD11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{F6547846-5F0D-4200-9259-D148ED865818}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6547846-5F0D-4200-9259-D148ED865818}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6547846-5F0D-4200-9259-D148ED865818}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CF758EF5-5B79-495E-AA53-B7A0AC55BF8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF758EF5-5B79-495E-AA53-B7A0AC55BF8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF758EF5-5B79-495E-AA53-B7A0AC55BF8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF758EF5-5B79-495E-AA53-B7A0AC55BF8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74CBE79B-9C43-4970-B3B5-B106ED1CBD11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74CBE79B-9C43-4970-B3B5-B106ED1CBD11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74CBE79B-9C43-4970-B3B5-B106ED1CBD11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74CBE79B-9C43-4970-B3B5-B106ED1CBD11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

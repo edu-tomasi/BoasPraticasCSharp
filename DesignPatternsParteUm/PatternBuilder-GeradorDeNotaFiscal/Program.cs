@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace PatternBuilder_GeradorDeNotaFiscal
 {
@@ -11,7 +14,7 @@ namespace PatternBuilder_GeradorDeNotaFiscal
             IList<ItemDaNota> itens = new List<ItemDaNota>();
 
             double valorTotal = 0;
-            foreach(ItemDaNota item in itens)
+            foreach (ItemDaNota item in itens)
             {
                 valorTotal += item.Valor;
             }
