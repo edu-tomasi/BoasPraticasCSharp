@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternDecorator-ImpostosCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternBuilder-GeradorDeNotaFiscal", "PatternBuilder-GeradorDeNotaFiscal\PatternBuilder-GeradorDeNotaFiscal.csproj", "{74CBE79B-9C43-4970-B3B5-B106ED1CBD11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternState-VariacaoEstadoOrcamento", "PatternState-VariacaoEstadoOrcamento\PatternState-VariacaoEstadoOrcamento.csproj", "{D4CD296A-EFB2-4CA3-9E1C-11444351F8FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{74CBE79B-9C43-4970-B3B5-B106ED1CBD11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74CBE79B-9C43-4970-B3B5-B106ED1CBD11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74CBE79B-9C43-4970-B3B5-B106ED1CBD11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4CD296A-EFB2-4CA3-9E1C-11444351F8FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4CD296A-EFB2-4CA3-9E1C-11444351F8FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4CD296A-EFB2-4CA3-9E1C-11444351F8FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4CD296A-EFB2-4CA3-9E1C-11444351F8FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
