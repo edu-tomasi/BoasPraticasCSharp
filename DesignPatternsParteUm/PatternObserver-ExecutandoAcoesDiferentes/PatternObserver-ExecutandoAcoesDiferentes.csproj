@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exemplo Tutorials Point\BinaryObserver.cs" />
     <Compile Include="Exemplo NotaFiscal Builder+Observer\EnviadorDeEmail.cs" />
     <Compile Include="Exemplo NotaFiscal Builder+Observer\EnviadorDeSms.cs" />
     <Compile Include="Exemplo NotaFiscal Builder+Observer\IAcaoAposGererNota.cs" />
@@ -52,11 +53,16 @@
     <Compile Include="Exemplo NotaFiscal Builder+Observer\NotaFiscal.cs" />
     <Compile Include="Exemplo NotaFiscal Builder+Observer\NotaFiscalBuilder.cs" />
     <Compile Include="Exemplo NotaFiscal Builder+Observer\NotaFiscalDao.cs" />
+    <Compile Include="Exemplo Tutorials Point\HexaObserver.cs" />
+    <Compile Include="Exemplo Tutorials Point\Observer.cs" />
+    <Compile Include="Exemplo Tutorials Point\OctalObserver.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Subject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Exemplo Tutorials Point\exemplo.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

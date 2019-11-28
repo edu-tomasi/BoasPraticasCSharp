@@ -37,6 +37,22 @@ namespace PatternObserver_ExecutandoAcoesDiferentes
 
             Console.WriteLine(notaFiscal.ValorBruto);
             Console.WriteLine(notaFiscal.Impostos);
+            Console.ReadKey();
+            Console.Clear();
+            #endregion
+
+            #region Exemplo Tutorials Point
+            Subject subject = new Subject();
+
+            new HexaObserver(subject);
+            new OctalObserver(subject);
+            new BinaryObserver(subject);
+
+            Console.WriteLine("First state change: 15");
+            subject.setState(15);
+            Console.WriteLine();
+            Console.WriteLine("Second state change: 10");
+            subject.setState(10);
             #endregion
 
             Console.ReadKey();
