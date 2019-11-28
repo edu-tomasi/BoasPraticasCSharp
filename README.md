@@ -10,10 +10,12 @@ Implementado exemplo dos padrões:
  * Strategy => Interfaces com Métodos que devem ser implementados pelos classes, permitindo que a chamada seja genérica e alterada em tempo de execução.
  * Template Method => Classes abstratas que tem parte da implementação comum e tem lacunas de implementação para ser feito pelas classes concretas...
 
+
  * Factory => Classe que simplifica a criação de objetos, ele é muito parecido com o __Pattern Builder__ porém a diferença entre eles é que o __Factory__ utiliza sempre os mesmos parâmetros para a instanciar o objeto.
 
 
 Exemplos Implementados:
+
 __Parte 1__
  * [Builder Pattern](https://github.com/edu-tomasi/BoasPraticasCSharp/blob/master/DesignPatternsParteUm/PatternBuilder-GeradorDeNotaFiscal/Exemplo%20Tutorials%20Point/exemplo.md)
  * [Chain of Responsability Pattern](https://github.com/edu-tomasi/BoasPraticasCSharp/blob/master/DesignPatternsParteUm/PatternChainOfResponsibility-DescontosOr%C3%A7amento/ExemploTutorialsPoint/exemplo.md)
