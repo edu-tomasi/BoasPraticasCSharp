@@ -24,4 +24,4 @@ __Parte 1__
  * [Template Pattern](https://github.com/edu-tomasi/BoasPraticasCSharp/blob/master/DesignPatternsParteUm/PatternTemplateMethod-Or%C3%A7amentoImpostos/ExemploTutorialsPoint/exemplo.md)
 
  __Parte 2__
- * [Factory Pattern]()
+ * [Factory Pattern](https://github.com/edu-tomasi/BoasPraticasCSharp/blob/master/DesignPatternsParteDois/PatternFactory-CriandoConexaoComDb/Exemplo%20Tutorials%20Point/exemplo.md)
