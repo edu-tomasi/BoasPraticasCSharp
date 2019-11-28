@@ -12,7 +12,12 @@ namespace PatternObserver_ExecutandoAcoesDiferentes
         static void Main(string[] args)
         {
             #region Exemplo Pattern Builder
-            NotaFiscalBuilder criador = new NotaFiscalBuilder();
+            List<IAcaoAposGererNota> listaAcoes = new List<IAcaoAposGererNota>();
+            listaAcoes.Add(new EnviadorDeEmail());
+            listaAcoes.Add(new NotaFiscalDao());
+            listaAcoes.Add(new EnviadorDeSms());
+
+            NotaFiscalBuilder criador = new NotaFiscalBuilder(listaAcoes);
             //Mudado os métodos para formar um "Fluent Interface"/"Method Chaining". 
             criador
                 .ParaEmpresa("Caelum Ensino e Inovacao")
@@ -22,9 +27,11 @@ namespace PatternObserver_ExecutandoAcoesDiferentes
                 .NaDataAtual()
                 .ComObservacoes("Obs!");
 
-            criador.AdicionarAcao(new EnviadorDeSms());
-            criador.AdicionarAcao(new NotaFiscalDao());
-            criador.AdicionarAcao(new EnviadorDeSms());
+            //criador.AdicionarAcao(new EnviadorDeEmail());
+            //criador.AdicionarAcao(new NotaFiscalDao());
+            //criador.AdicionarAcao(new EnviadorDeSms());
+            criador.AdicionarAcao(new Impressora());
+            criador.AdicionarAcao(new Multiplicador(2.5));
 
             NotaFiscal notaFiscal = criador.Constroi();
 

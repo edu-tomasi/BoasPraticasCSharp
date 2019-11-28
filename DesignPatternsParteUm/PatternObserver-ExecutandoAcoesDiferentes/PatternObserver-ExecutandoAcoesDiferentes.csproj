@@ -43,13 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnviadorDeEmail.cs" />
-    <Compile Include="EnviadorDeSms.cs" />
-    <Compile Include="IAcaoAposGererNota.cs" />
-    <Compile Include="ItemDaNota.cs" />
-    <Compile Include="NotaFiscal.cs" />
-    <Compile Include="NotaFiscalBuilder.cs" />
-    <Compile Include="NotaFiscalDao.cs" />
+    <Compile Include="Exemplo NotaFiscal Builder+Observer\EnviadorDeEmail.cs" />
+    <Compile Include="Exemplo NotaFiscal Builder+Observer\EnviadorDeSms.cs" />
+    <Compile Include="Exemplo NotaFiscal Builder+Observer\IAcaoAposGererNota.cs" />
+    <Compile Include="Exemplo NotaFiscal Builder+Observer\Impressora.cs" />
+    <Compile Include="Exemplo NotaFiscal Builder+Observer\ItemDaNota.cs" />
+    <Compile Include="Exemplo NotaFiscal Builder+Observer\Multiplicador.cs" />
+    <Compile Include="Exemplo NotaFiscal Builder+Observer\NotaFiscal.cs" />
+    <Compile Include="Exemplo NotaFiscal Builder+Observer\NotaFiscalBuilder.cs" />
+    <Compile Include="Exemplo NotaFiscal Builder+Observer\NotaFiscalDao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
