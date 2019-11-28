@@ -3,6 +3,8 @@
 No __Factory Pattern__ nós criamos um objeto sem expor a lógica de criação ao cliente, e fazemos a referência ao objeto recém criado utilizando uma interface em comum.
 Este padrão de projeto está relacionado dentro dos __Padrões  Criacionais__ e provém uma das melhores maneiras de criar um objeto.
 
+Mais informações podem ser obtidas neste [endereço](https://www.tutorialspoint.com/design_pattern/factory_pattern.htm).
+
 Implementação: Iremos criar uma _interface Shape_ e classes concretas que implementam ela. Uma classe factory _ShapeFactory_ será definida como próximo passo.
 
 Passo à passo:
