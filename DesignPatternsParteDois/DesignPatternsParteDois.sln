@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternFactory-CriandoConexaoComDb", "PatternFactory-CriandoConexaoComDb\PatternFactory-CriandoConexaoComDb.csproj", "{4707601E-1BB0-4A6D-A0A0-AB89B1A7D52B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternFlyweight-MuitoObjetos", "PatternFlyweight-MuitoObjetos\PatternFlyweight-MuitoObjetos.csproj", "{AE953A33-4744-446D-84BE-F6B6CB008C97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4707601E-1BB0-4A6D-A0A0-AB89B1A7D52B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4707601E-1BB0-4A6D-A0A0-AB89B1A7D52B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4707601E-1BB0-4A6D-A0A0-AB89B1A7D52B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE953A33-4744-446D-84BE-F6B6CB008C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE953A33-4744-446D-84BE-F6B6CB008C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE953A33-4744-446D-84BE-F6B6CB008C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE953A33-4744-446D-84BE-F6B6CB008C97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -27,3 +27,4 @@ __Parte 1__
 
  __Parte 2__
  * [Factory Pattern](https://github.com/edu-tomasi/BoasPraticasCSharp/blob/master/DesignPatternsParteDois/PatternFactory-CriandoConexaoComDb/Exemplo%20Tutorials%20Point/exemplo.md)
+ * [Flyweight Pattern]()
