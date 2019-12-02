@@ -20,11 +20,11 @@ namespace PatternDecorator_ImpostosCompostos
             #endregion
 
             #region Exemplo 2 - Decorator
-            //Orcamento orcamento = new Orcamento(1000);
-            //Imposto impostoAlto = new ImpostoMuitoAlto(new ISS(new ICMS()));
-            //double valorTotalImposto = impostoAlto.Calcula(orcamento);
+            Orcamento orcamento = new Orcamento(1000);
+            Imposto impostoAlto = new ImpostoMuitoAlto(new ISS(new ICMS()));
+            double valorTotalImposto = impostoAlto.Calcula(orcamento);
 
-            //Console.WriteLine(valorTotalImposto); 
+            Console.WriteLine(valorTotalImposto);
             #endregion
 
             #region Exemplo 3 - Decorator e Template Method

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternFactory-CriandoConex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternFlyweight-MuitoObjetos", "PatternFlyweight-MuitoObjetos\PatternFlyweight-MuitoObjetos.csproj", "{AE953A33-4744-446D-84BE-F6B6CB008C97}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternMemento-EstadosAnterioresContrato", "PatternMemento-EstadosAnterioresContrato\PatternMemento-EstadosAnterioresContrato.csproj", "{C06CD5C5-568F-4CF1-A471-1824AB8A2808}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AE953A33-4744-446D-84BE-F6B6CB008C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE953A33-4744-446D-84BE-F6B6CB008C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE953A33-4744-446D-84BE-F6B6CB008C97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C06CD5C5-568F-4CF1-A471-1824AB8A2808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C06CD5C5-568F-4CF1-A471-1824AB8A2808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C06CD5C5-568F-4CF1-A471-1824AB8A2808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C06CD5C5-568F-4CF1-A471-1824AB8A2808}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
