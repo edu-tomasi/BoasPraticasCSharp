@@ -46,12 +46,16 @@
     <Compile Include="AlterandoContrato com Memento\Contrato.cs" />
     <Compile Include="AlterandoContrato com Memento\Estado.cs" />
     <Compile Include="AlterandoContrato com Memento\Historico.cs" />
+    <Compile Include="Exemplo Tutorials Point\CakeTaker.cs" />
+    <Compile Include="Exemplo Tutorials Point\Memento.cs" />
+    <Compile Include="Exemplo Tutorials Point\Originator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AlterandoContrato com Memento\TipoContrato.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Exemplo Tutorials Point\exemplo.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

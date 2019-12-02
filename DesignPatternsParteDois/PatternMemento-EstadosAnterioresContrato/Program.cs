@@ -15,7 +15,7 @@ namespace PatternMemento_EstadosAnterioresContrato
             Contrato c = new Contrato(DateTime.Now, "Eduardo Tomasi", TipoContrato.Novo);
             historico.Adiciona(c.SalvaEstado());
 
-            //Console.WriteLine(c.Tipo);
+            Console.WriteLine(c.Tipo);
 
             c.Avanca();
             historico.Adiciona(c.SalvaEstado());
@@ -28,9 +28,27 @@ namespace PatternMemento_EstadosAnterioresContrato
             Console.WriteLine(historico.Pega(0).Contrato.Tipo);
 
             Console.ReadKey();
+            Console.Clear();
 
+            Originator originator = new Originator();
+            CakeTaker careTaker = new CakeTaker();
 
+            originator.State = "State #1";
+            originator.State = "State #2";
+            careTaker.Add(originator.saveStateToMemento());
 
+            originator.State = "State #3";
+            careTaker.Add(originator.saveStateToMemento());
+
+            originator.State = "State #4";
+            Console.WriteLine($"Current State: {originator.State}!");
+
+            originator.getStateFromMemento(careTaker.Get(0));
+            Console.WriteLine($"First saved State: {originator.State}!");
+            originator.getStateFromMemento(careTaker.Get(1));
+            Console.WriteLine($"Second saved State: {originator.State}!");
+
+            Console.ReadKey();
         }
     }
 }
