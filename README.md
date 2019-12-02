@@ -13,6 +13,7 @@ Implementado exemplo dos padrões:
 
  * Factory => Classe que simplifica a criação de objetos, ele é muito parecido com o __Pattern Builder__ porém a diferença entre eles é que o __Factory__ utiliza sempre os mesmos parâmetros para a instanciar o objeto.
  * Flyweight => Classe que implementa uma maneira para evitar que o mesmo objeto seja instânciado diversas vezes.
+ * Memento => Estrutura de classes que implementa um histórico navegavel (lista) de um objeto em específico para que estados anteriores possam ser acessados. O __Memento__ cria uma padronização no armazenamento de estados de objetos.
 
 
 Exemplos Implementados:
