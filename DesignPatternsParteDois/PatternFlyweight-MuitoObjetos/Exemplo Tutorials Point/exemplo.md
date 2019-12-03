@@ -1,7 +1,7 @@
 ﻿### Design Pattern - Flyweight Pattern
 
 No __Flyweight Pattern__ o objetivo é reduzir o número de objetos instanciados, e com isso reduzir o consumo de memória pela aplicação. 
-Esta padrão de projeto está relacionado dentro dos __Padrões Estruturais__.
+Este padrão de projeto está relacionado dentro dos __Padrões Estruturais__.
 
 Mais informações podem ser obtidas neste [endereço](https://www.tutorialspoint.com/design_pattern/flyweight_pattern.htm).
 
@@ -16,7 +16,7 @@ Exemplos de Código:
  * Program.cs
  ```
     class Program
-    {
+    
         private static string[] colors = { "Red", "Green", "Blue", "White", "Black" };
 
         static void Main(string[] args)
