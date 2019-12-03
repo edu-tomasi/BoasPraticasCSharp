@@ -27,7 +27,6 @@
 /DesignPatternsParteDois/PatternMemento-EstadosAnterioresContrato/bin/Debug
 /DesignPatternsParteDois/PatternMemento-EstadosAnterioresContrato/obj/Debug
 /DesignPatternsParteDois/PatternMemento-SalvandoEstadosAnteriores/obj
-/DesignPatternsParteDois/PatternInterpreter-ResolvendoExpressoes/bin/Debug
-/DesignPatternsParteDois/PatternInterpreter-ResolvendoExpressoes/obj
+/DesignPatternsParteDois/PatternInterpreter-ResolvendoExpressoes
 /DesignPatternsParteDois/PatternVisitor-NavegandoNosNosDoInterpreter/bin/Debug
-/DesignPatternsParteDois/PatternVisitor-NavegandoNosNosDoInterpreter/obj/Debug
+/DesignPatternsParteDois/PatternVisitor-NavegandoNosNosDoInterpreter/obj

@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternFlyweight-MuitoObjet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternMemento-EstadosAnterioresContrato", "PatternMemento-EstadosAnterioresContrato\PatternMemento-EstadosAnterioresContrato.csproj", "{C06CD5C5-568F-4CF1-A471-1824AB8A2808}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternInterpreter-ResolvendoExpressoes", "PatternInterpreter-ResolvendoExpressoes\PatternInterpreter-ResolvendoExpressoes.csproj", "{41AEC814-6B42-4E9A-81F5-DF42492E3FDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternVisitor-NavegandoNosNosDoInterpreter", "PatternVisitor-NavegandoNosNosDoInterpreter\PatternVisitor-NavegandoNosNosDoInterpreter.csproj", "{15F7E646-5C08-46D3-ACCE-B24C635F38F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{C06CD5C5-568F-4CF1-A471-1824AB8A2808}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C06CD5C5-568F-4CF1-A471-1824AB8A2808}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C06CD5C5-568F-4CF1-A471-1824AB8A2808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41AEC814-6B42-4E9A-81F5-DF42492E3FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41AEC814-6B42-4E9A-81F5-DF42492E3FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41AEC814-6B42-4E9A-81F5-DF42492E3FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41AEC814-6B42-4E9A-81F5-DF42492E3FDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15F7E646-5C08-46D3-ACCE-B24C635F38F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15F7E646-5C08-46D3-ACCE-B24C635F38F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15F7E646-5C08-46D3-ACCE-B24C635F38F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15F7E646-5C08-46D3-ACCE-B24C635F38F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
