@@ -43,8 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calculadora com Interpreter\Divisao.cs" />
+    <Compile Include="Calculadora com Interpreter\IExpressao.cs" />
+    <Compile Include="Calculadora com Interpreter\Multiplicacao.cs" />
+    <Compile Include="Calculadora com Interpreter\Numero.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Calculadora com Interpreter\RaizQuadrada.cs" />
+    <Compile Include="Calculadora com Interpreter\Soma.cs" />
+    <Compile Include="Calculadora com Interpreter\Subtracao.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
