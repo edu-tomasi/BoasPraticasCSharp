@@ -43,10 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exemplo Tutorials Point\Computer.cs" />
+    <Compile Include="Exemplo Tutorials Point\ComputerPartDisplayVisitor.cs" />
+    <Compile Include="Exemplo Tutorials Point\IComputerPart.cs" />
+    <Compile Include="Exemplo Tutorials Point\IComputerPartVisitor.cs" />
     <Compile Include="Imprimir Expressão com Visitor\IExpressao.cs" />
     <Compile Include="Imprimir Expressão com Visitor\Impressora.cs" />
     <Compile Include="Imprimir Expressão com Visitor\IVisitor.cs" />
     <Compile Include="Imprimir Expressão com Visitor\Numero.cs" />
+    <Compile Include="Exemplo Tutorials Point\Keyboard.cs" />
+    <Compile Include="Exemplo Tutorials Point\Monitor.cs" />
+    <Compile Include="Exemplo Tutorials Point\Mouse.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Imprimir Expressão com Visitor\Soma.cs" />
@@ -54,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Exemplo Tutorials Point\exemplo.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
