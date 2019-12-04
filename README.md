@@ -15,6 +15,7 @@ Implementado exemplo dos padrões:
  * Flyweight => Classe que implementa uma maneira para evitar que o mesmo objeto seja instânciado diversas vezes.
  * Memento => Estrutura de classes que implementa um histórico navegavel (lista) de um objeto em específico para que estados anteriores possam ser acessados. O __Memento__ cria uma padronização no armazenamento de estados de objetos.
  * Interpreter => Estrutura de classes que implementa um interpretador de expressões.
+ * Visitor => Uma classe de visitantes que altera o algoritmo de execução de uma classe de elemento.
 
 
 Exemplos Implementados:
@@ -33,3 +34,4 @@ __Parte 1__
  * [Flyweight Pattern](https://github.com/edu-tomasi/BoasPraticasCSharp/blob/master/DesignPatternsParteDois/PatternFlyweight-MuitoObjetos/Exemplo%20Tutorials%20Point/exemplo.md)
  * [Memento Pattern](https://github.com/edu-tomasi/BoasPraticasCSharp/blob/master/DesignPatternsParteDois/PatternMemento-EstadosAnterioresContrato/Exemplo%20Tutorials%20Point/exemplo.md)
  * [Interpreter Pattern](https://github.com/edu-tomasi/BoasPraticasCSharp/blob/master/DesignPatternsParteDois/PatternInterpreter-ResolvendoExpressoes/Tutorials%20Point%20InterpreterDemo/exemplo.md)
+ * [Visitor Pattern](https://github.com/edu-tomasi/BoasPraticasCSharp/blob/master/DesignPatternsParteDois/PatternVisitor-NavegandoNosNosDoInterpreter/Exemplo%20Tutorials%20Point/exemplo.md)
