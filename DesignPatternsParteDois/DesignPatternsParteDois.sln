@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.902
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternFactory-CriandoConexaoComDb", "PatternFactory-CriandoConexaoComDb\PatternFactory-CriandoConexaoComDb.csproj", "{4707601E-1BB0-4A6D-A0A0-AB89B1A7D52B}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternInterpreter-ResolvendoExpressoes", "PatternInterpreter-ResolvendoExpressoes\PatternInterpreter-ResolvendoExpressoes.csproj", "{41AEC814-6B42-4E9A-81F5-DF42492E3FDC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternVisitor-NavegandoNosNosDoInterpreter", "PatternVisitor-NavegandoNosNosDoInterpreter\PatternVisitor-NavegandoNosNosDoInterpreter.csproj", "{15F7E646-5C08-46D3-ACCE-B24C635F38F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternBridge-EnvioDeMensagens", "PatternBridge-EnvioDeMensagens\PatternBridge-EnvioDeMensagens.csproj", "{E7536C80-F79B-4F52-8875-4E2FF2040D6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{15F7E646-5C08-46D3-ACCE-B24C635F38F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15F7E646-5C08-46D3-ACCE-B24C635F38F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15F7E646-5C08-46D3-ACCE-B24C635F38F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7536C80-F79B-4F52-8875-4E2FF2040D6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7536C80-F79B-4F52-8875-4E2FF2040D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7536C80-F79B-4F52-8875-4E2FF2040D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7536C80-F79B-4F52-8875-4E2FF2040D6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
