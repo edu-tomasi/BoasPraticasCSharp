@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternBridge-EnvioDeMensag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternCommand-DiferentesAcoes", "PatternCommand-DiferentesAcoes\PatternCommand-DiferentesAcoes.csproj", "{33A4A06C-C86F-4AA2-8430-F0C740FA405A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternAdapter-UtilizandoRecursosLegados", "PatternAdapter-UtilizandoRecursosLegados\PatternAdapter-UtilizandoRecursosLegados.csproj", "{70C22446-3217-4991-A650-015189CE00BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{33A4A06C-C86F-4AA2-8430-F0C740FA405A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33A4A06C-C86F-4AA2-8430-F0C740FA405A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33A4A06C-C86F-4AA2-8430-F0C740FA405A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70C22446-3217-4991-A650-015189CE00BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70C22446-3217-4991-A650-015189CE00BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70C22446-3217-4991-A650-015189CE00BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70C22446-3217-4991-A650-015189CE00BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
