@@ -6,6 +6,7 @@ namespace PatternAdapter_UtilizandoRecursosLegados
     {
         static void Main(string[] args)
         {
+            #region Exemplo Alura
             Cliente cliente = new Cliente();
             cliente.Name = "Eduardo";
             cliente.Endereco = "Rua Maria André de Freitas";
@@ -16,6 +17,18 @@ namespace PatternAdapter_UtilizandoRecursosLegados
             Console.WriteLine(xml);
 
             Console.ReadKey();
+            Console.Clear();
+            #endregion
+
+            #region Exemplo Tutorials Point
+            AudioPlayer audioPlayer = new AudioPlayer();
+            audioPlayer.Play("mp3", "beyond the horizon.mp3");
+            audioPlayer.Play("mp4", "alone.mp4");
+            audioPlayer.Play("vlc", "far far away.vlc");
+            audioPlayer.Play("avi", "mind me.avi");
+
+            Console.ReadKey();
+            #endregion
         }
     }
 }

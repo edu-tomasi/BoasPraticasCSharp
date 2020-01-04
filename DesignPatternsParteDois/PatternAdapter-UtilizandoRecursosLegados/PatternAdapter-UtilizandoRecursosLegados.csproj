@@ -43,10 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exemplo Tutorials Point\AudioPlayer.cs" />
     <Compile Include="Exemplo Alura\Cliente.cs" />
     <Compile Include="Exemplo Alura\GeradorDeXml.cs" />
+    <Compile Include="Exemplo Tutorials Point\IAdvancedMediaPlayer.cs" />
+    <Compile Include="Exemplo Tutorials Point\MediaAdapter.cs" />
+    <Compile Include="Exemplo Tutorials Point\MediaPlayer.cs" />
+    <Compile Include="Exemplo Tutorials Point\Mp4Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Exemplo Tutorials Point\VlcPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
