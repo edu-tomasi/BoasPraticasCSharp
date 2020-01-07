@@ -30,13 +30,20 @@ namespace PatternFacade_TrabalhandoComSistemasLegados
             var cliente = facade.BuscaCliente(cpf);
             var fatura = facade.CriaFatura(cliente, 5000);
             var cobranca = facade.GeraCobranca(fatura);
-            facade.FazContato(cliente, cobranca); 
+            facade.FazContato(cliente, cobranca);
+            
+            Console.ReadKey();
+            Console.Clear();
             #endregion
 
+            #region Exemplo TutorialsPoint
+            ShapeMaker shapeMaker = new ShapeMaker();
 
-
+            shapeMaker.drawCircle();
+            shapeMaker.drawRectangle();
+            shapeMaker.drawSquare();
             Console.ReadKey();
-
+            #endregion
         }
     }
 }
